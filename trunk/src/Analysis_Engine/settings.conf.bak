@@ -1,0 +1,11 @@
+#Configuration settings file
+
+#solr url
+solr_url = "http://localhost:8983/solr"
+
+#custom messages
+words_updated = "Words Updated"
+
+#Errors
+status_405 = "Method not allowed"
+input_error = "Error - Expected array of string"

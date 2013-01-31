@@ -1,0 +1,10 @@
+import solr
+
+config = {}
+execfile("../settings.conf", config)
+
+print config["solr_url"]
+
+s = solr.SolrConnection('http://localhost:8983/solr')
+response = s.query('title:beautiful')
+print response.results[0]['cat'][0]
